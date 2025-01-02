@@ -2,6 +2,7 @@
 const add = document.getElementById('Add');
 const subtract = document.getElementById('Subtract');
 const number = document.getElementById('number');
+const reset = document.getElementById('Reset');
 
 let count = 0;
 
@@ -28,4 +29,9 @@ subtract.addEventListener("dblclick", () => {
 });
 
 number.innerHTML = `Number is ${count}`;
+
+reset.addEventListener('click', () => { 
+    count = 0;
+    number.innerHTML = `Number is ${count}`;
+})
 
