@@ -10,8 +10,10 @@ let count = 0;
 theme.addEventListener("change", function () {
   if (this.checked) {
     document.body.classList.add("dark-mode"); // Add a class for dark mode
+    console.log("Dark Mode On");
   } else {
     document.body.classList.remove("dark-mode"); // Remove the dark mode class
+    console.log("Dark Mode Off");
   }
 });
 
